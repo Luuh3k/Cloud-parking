@@ -4,6 +4,7 @@ import desafiobootcamp.cloudparking.controller.dto.ParkingDTO;
 import desafiobootcamp.cloudparking.controller.mapper.ParkingMapper;
 import desafiobootcamp.cloudparking.model.Parking;
 import desafiobootcamp.cloudparking.service.ParkingService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +27,7 @@ public class ParkingController {
     public List<ParkingDTO> findAll(){
         List<Parking> parkingList = parkingService.findAll();
         List<ParkingDTO> result = parkingMapper.toParkingDTOList(parkingList);
-        return result;
+        return (List<ParkingDTO>) ResponseEntity.ok(result);
     }
  }
 
