@@ -1,6 +1,6 @@
-package desafiobootcamp.cloudparking.service;
+package desafiobootcamp.cloudparking.service.service;
 
-import desafiobootcamp.cloudparking.model.Parking;
+import desafiobootcamp.cloudparking.service.model.Parking;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;

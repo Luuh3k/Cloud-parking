@@ -1,9 +1,9 @@
-package desafiobootcamp.cloudparking.controller.mapper;
+package desafiobootcamp.cloudparking.service.controller.mapper;
 
 
-import desafiobootcamp.cloudparking.controller.dto.ParkingCreateDTO;
-import desafiobootcamp.cloudparking.controller.dto.ParkingDTO;
-import desafiobootcamp.cloudparking.model.Parking;
+import desafiobootcamp.cloudparking.service.controller.dto.ParkingCreateDTO;
+import desafiobootcamp.cloudparking.service.controller.dto.ParkingDTO;
+import desafiobootcamp.cloudparking.service.model.Parking;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 

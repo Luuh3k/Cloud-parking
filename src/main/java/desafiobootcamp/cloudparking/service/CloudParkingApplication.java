@@ -1,4 +1,4 @@
-package desafiobootcamp.cloudparking;
+package desafiobootcamp.cloudparking.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

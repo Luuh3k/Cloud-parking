@@ -1,4 +1,4 @@
-package desafiobootcamp.cloudparking.controller.dto;
+package desafiobootcamp.cloudparking.service.controller.dto;
 
 public class ParkingCreateDTO {
 

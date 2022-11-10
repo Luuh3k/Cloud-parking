@@ -1,10 +1,10 @@
-package desafiobootcamp.cloudparking.controller;
+package desafiobootcamp.cloudparking.service.controller;
 
-import desafiobootcamp.cloudparking.controller.dto.ParkingCreateDTO;
-import desafiobootcamp.cloudparking.controller.dto.ParkingDTO;
-import desafiobootcamp.cloudparking.controller.mapper.ParkingMapper;
-import desafiobootcamp.cloudparking.model.Parking;
-import desafiobootcamp.cloudparking.service.ParkingService;
+import desafiobootcamp.cloudparking.service.controller.dto.ParkingCreateDTO;
+import desafiobootcamp.cloudparking.service.controller.dto.ParkingDTO;
+import desafiobootcamp.cloudparking.service.controller.mapper.ParkingMapper;
+import desafiobootcamp.cloudparking.service.model.Parking;
+import desafiobootcamp.cloudparking.service.service.ParkingService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
@@ -64,7 +64,6 @@ public class ParkingController {
 
     @PostMapping("/{id}/exit")
     public ResponseEntity<ParkingDTO> checkOut(@PathVariable String id) {
-        //TODO verificar se já não esta fechado e lançar exceção
         Parking parking = parkingService.checkOut(id);
         return ResponseEntity.ok(parkingMapper.toParkingDTO(parking));
     }

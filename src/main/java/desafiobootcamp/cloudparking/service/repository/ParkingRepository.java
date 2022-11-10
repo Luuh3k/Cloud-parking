@@ -1,6 +1,6 @@
-package desafiobootcamp.cloudparking.repository;
+package desafiobootcamp.cloudparking.service.repository;
 
-import desafiobootcamp.cloudparking.model.Parking;
+import desafiobootcamp.cloudparking.service.model.Parking;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

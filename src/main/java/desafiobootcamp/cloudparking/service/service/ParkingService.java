@@ -1,12 +1,12 @@
-package desafiobootcamp.cloudparking.service;
+package desafiobootcamp.cloudparking.service.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
-import desafiobootcamp.cloudparking.exception.ParkingNotFoundException;
-import desafiobootcamp.cloudparking.model.Parking;
-import desafiobootcamp.cloudparking.repository.ParkingRepository;
+import desafiobootcamp.cloudparking.service.exception.ParkingNotFoundException;
+import desafiobootcamp.cloudparking.service.model.Parking;
+import desafiobootcamp.cloudparking.service.repository.ParkingRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

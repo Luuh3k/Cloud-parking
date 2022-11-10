@@ -1,4 +1,4 @@
-package desafiobootcamp.cloudparking.config;
+package desafiobootcamp.cloudparking.service.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
